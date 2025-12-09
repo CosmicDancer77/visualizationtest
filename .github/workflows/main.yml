@@ -36,4 +36,4 @@ jobs:
 
       # Step 4: Run the Python script
       - name: Execute Python script
-        run: scheduled_1.py
+        run: /CosmicDancer77/visualizationtest/blob/main/scheduled_1.py

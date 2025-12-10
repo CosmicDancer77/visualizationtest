@@ -1,5 +1,9 @@
 name: Scheduled Python Script
 
+permissions:
+  contents: write
+  actions: write
+  
 # 1. Define the Trigger: When should this workflow run?
 on:
   # Schedule the workflow to run every 30 minutes using cron syntax
@@ -8,9 +12,7 @@ on:
     # Cron format: min hour day_of_month month day_of_week
     - cron: '0,30 * * * *'
 
-permissions:
-  contents: write
-  actions: write
+
   
   # Allow manual runs from the GitHub Actions tab (optional but helpful)
   workflow_dispatch:

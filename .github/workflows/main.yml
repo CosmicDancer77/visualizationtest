@@ -7,6 +7,10 @@ on:
     # This cron expression means "at minute 0 and minute 30, every hour, every day"
     # Cron format: min hour day_of_month month day_of_week
     - cron: '0,30 * * * *'
+
+permissions:
+  contents: write
+  actions: write
   
   # Allow manual runs from the GitHub Actions tab (optional but helpful)
   workflow_dispatch:

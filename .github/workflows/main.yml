@@ -45,4 +45,4 @@ jobs:
 
       # Step 4: Run the Python script
       - name: Execute Python script
-        run: scheduled_1.py
+        run: .github/workflows/scheduled_1.py

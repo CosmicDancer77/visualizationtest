@@ -93,11 +93,11 @@ def main_update_script():
     
     # NEW: Pass the target GitHub file path as the third argument
     # If the file is in the root, the path is just the filename.
-    df1 = fetch_and_process_csv(CSV_URL_1, "File 1 (buy_extra)", "buy_extra.csv")
+    df1 = fetch_and_process_csv(.github/workflows/buy_extra.csv, "File 1 (buy_extra)", "buy_extra.csv")
     if df1 is not None:
         print(f"File 1 shape: {df1.shape}")
 
-    df2 = fetch_and_process_csv(CSV_URL_2, "File 2 (sell_extra)", "sell_extra.csv")
+    df2 = fetch_and_process_csv(.github/workflows/sell_extra.csv, "File 2 (sell_extra)", "sell_extra.csv")
     if df2 is not None:
         print(f"File 2 shape: {df2.shape}")
         
